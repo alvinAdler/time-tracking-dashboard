@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
+import PlaceholderJumbotron from './components/PlaceholderJumbotron/PlaceholderJumbotron';
+import ProfileCard from './components/ProfileCard/ProfileCard';
+import ActivityCard from './components/ActivityCard/ActivityCard';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="main-container">
+				<ProfileCard/>
+				<ActivityCard/>
+				<ActivityCard/>
+				<ActivityCard/>
+				<ActivityCard/>
+				<ActivityCard/>
+				<ActivityCard/>
+			</div>
+    	</div>
+	);
 }
 
 export default App;
