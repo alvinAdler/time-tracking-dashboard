@@ -45,3 +45,7 @@
     padding: 5% 10%;
     border-radius: 15px;
 }
+
+.time-navigation > p{
+    cursor: pointer;
+}

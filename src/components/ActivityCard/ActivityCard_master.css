@@ -1,4 +1,38 @@
 .activity-card-container{
-    border: 3px solid blue;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-header{
+    /* border: 3px solid red; */
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+
+.activity-header > svg{
+    height: 100%;
+}
+
+.activity-desc{
+    border-radius: 10px;
+    padding: 10%;
+    flex-grow: 2;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.activity-desc span:first-of-type{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.activity-desc > p:first-of-type{
+    font-size: 50px;
+    font-weight: 300;
 }
