@@ -1,6 +1,5 @@
 import './App.css';
 
-import PlaceholderJumbotron from './components/PlaceholderJumbotron/PlaceholderJumbotron';
 import ProfileCard from './components/ProfileCard/ProfileCard';
 import ActivityCard from './components/ActivityCard/ActivityCard';
 

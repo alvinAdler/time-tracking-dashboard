@@ -5,8 +5,10 @@
 }
 
 html, body, #root, .App{
+    min-height: 100vh;
     height: max-content;
     width: 100%;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* html{
