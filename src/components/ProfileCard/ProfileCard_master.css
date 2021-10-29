@@ -18,6 +18,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
+    z-index: 5;
 }
 
 .profile-picture{
@@ -44,12 +45,25 @@
     flex-grow: 1;
     background-color: hsl(235, 46%, 20%);
     padding: 5% 10%;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    z-index: 2;
+    bottom: 10px;
 }
 
 .time-navigation > p{
-    margin: 0;
+    margin: 10%;
     cursor: pointer;
+    color: hsl(235, 45%, 61%);
+    transition: 150ms all ease-in-out;
+}
+
+.time-navigation > p:hover{
+    color: white;
+}
+
+#selected-day{
+    color: white;
 }
 
 @media only screen and (max-width: 650px){
@@ -78,5 +92,9 @@
         justify-content: space-between;
         align-items: center;
         padding: 3% 8%;
+    }
+
+    .time-navigation > p{
+        margin: 0;
     }
 }

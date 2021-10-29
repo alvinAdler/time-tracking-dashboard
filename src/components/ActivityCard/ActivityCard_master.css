@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .activity-header{
@@ -9,7 +10,7 @@
     height: 60px;
     display: flex;
     justify-content: flex-end;
-    border-radius: 10px;
+    border-radius: 15px 15px 0 0;
 }
 
 .activity-header > svg{
@@ -17,7 +18,7 @@
 }
 
 .activity-desc{
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10%;
     flex-grow: 2;
     background-color: hsl(235, 46%, 20%);
@@ -25,6 +26,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    transition: 150ms all ease-in-out;
+    cursor: pointer;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    bottom: 10px;
 }
 
 .activity-desc span:first-of-type{
@@ -37,6 +44,16 @@
     font-weight: 300;
 }
 
+.activity-desc > p:last-of-type{
+    color: hsl(236, 100%, 87%);
+}
+
+.activity-desc:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
 @media only screen and (max-width: 650px){
-    
+    .activity-desc{
+        padding: 5%;
+    }
 }

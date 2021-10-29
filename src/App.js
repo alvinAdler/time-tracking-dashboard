@@ -133,7 +133,7 @@ function App() {
 	return (
 		<div className="App">
 			<div className="main-container">
-				<ProfileCard changeSelectedTime={handleTimeChange}/>
+				<ProfileCard changeSelectedTime={handleTimeChange} currentTime={selectedTime}/>
 				<ActivityCard CurrentIcon={IconWork} activityInfo={activityInfo.work} selectedTime={selectedTime}/>
 				<ActivityCard CurrentIcon={IconPlay} activityInfo={activityInfo.play} selectedTime={selectedTime}/>
 				<ActivityCard CurrentIcon={IconStudy} activityInfo={activityInfo.study} selectedTime={selectedTime}/>
